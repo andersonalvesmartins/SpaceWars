@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MovePlayer.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\SpawnController.cs" Line="35" Column="48" />
+      <File FileName="Assets\Scripts\MoveInimigo.cs" Line="27" Column="3" />
+      <File FileName="Assets\Scripts\MoveTiro.cs" Line="22" Column="17" />
+      <File FileName="Assets\Scripts\Moveboss.cs" Line="38" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
