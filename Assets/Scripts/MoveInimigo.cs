@@ -24,7 +24,7 @@ public class MoveInimigo : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.tag == "Tiro") {
+		if (col.tag == "Tiro" || col.tag == "Player") {
 			Destroy (transform.gameObject);
 		}
 	}

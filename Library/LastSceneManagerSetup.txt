@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SpaceWars.unity
+- path: Assets/Scene/Introducao.unity
   isLoaded: 1
   isActive: 1

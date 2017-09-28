@@ -5,11 +5,15 @@ using UnityEngine;
 public class Moveboss : MonoBehaviour {
 	public float velocidade;
 	private bool sobe;
-	private int tiroBoss = 0;
+	private int bossLife = 10;
+	public GameObject tiroBoss;
+
+	public int shootRate;
+	private float currentTime;
 
 	// Use this for initialization
 	void Start () {
-		
+		currentTime = 0;	
 	}
 	
 	// Update is called once per frame
@@ -30,16 +34,21 @@ public class Moveboss : MonoBehaviour {
 		if (transform.position.x <= 11.3f && sobe == false) {
 			transform.position = new Vector3 (transform.position.x, transform.position.y - velocidade, transform.position.z);
 		}
+		currentTime += Time.deltaTime;
+		if(currentTime >= shootRate){
+			currentTime = 0;
+			GameObject tempPreFab = Instantiate (tiroBoss) as GameObject; 
+			tempPreFab.transform.position = new Vector3 (transform.position.x-2, transform.position.y, transform.position.z);
+		}
 	}
 		
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.tag == "Tiro") {
-			tiroBoss++;
-			if (tiroBoss == 10) {
+			bossLife--;
+			if (bossLife <= 0) {
 				Destroy (transform.gameObject);
-				tiroBoss = 0;
+				bossLife = 10;
 			}
 		}
 	}
-
 }

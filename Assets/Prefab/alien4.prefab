@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 0.1
+  tiroBoss: {fileID: 1550816864149962, guid: 0c3ab0eae989c9b4e8068b4f5910fbf9, type: 2}
+  shootRate: 1
 --- !u!212 &212329868880920180
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -55,7 +55,9 @@
      <Compile Include="Assets\Scripts\MoveInimigo.cs" />
      <Compile Include="Assets\Scripts\MovePlayer.cs" />
      <Compile Include="Assets\Scripts\MoveTiro.cs" />
+     <Compile Include="Assets\Scripts\MoveTiroBoss.cs" />
      <Compile Include="Assets\Scripts\SpawnController.cs" />
+     <Compile Include="Assets\Scripts\StartGame.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
